@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Canillas" targetNamespace="http://tempuri.org/Canillas.xsd" xmlns:mstns="http://tempuri.org/Canillas.xsd" xmlns="http://tempuri.org/Canillas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Canillas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Canillas" msprop:Generator_UserDSName="Canillas" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TablePropName="DataTable1" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VC_RAZON_SOCIAL_EMPRESA" msprop:Generator_UserColumnName="VC_RAZON_SOCIAL_EMPRESA" msprop:Generator_ColumnPropNameInRow="VC_RAZON_SOCIAL_EMPRESA" msprop:Generator_ColumnVarNameInTable="columnVC_RAZON_SOCIAL_EMPRESA" msprop:Generator_ColumnPropNameInTable="VC_RAZON_SOCIAL_EMPRESAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_RAZON_SOCIAL_DISTRIBUIDOR" msprop:Generator_UserColumnName="VC_RAZON_SOCIAL_DISTRIBUIDOR" msprop:Generator_ColumnPropNameInRow="VC_RAZON_SOCIAL_DISTRIBUIDOR" msprop:Generator_ColumnVarNameInTable="columnVC_RAZON_SOCIAL_DISTRIBUIDOR" msprop:Generator_ColumnPropNameInTable="VC_RAZON_SOCIAL_DISTRIBUIDORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_DESCRIPCION_AGENCIA" msprop:Generator_UserColumnName="VC_DESCRIPCION_AGENCIA" msprop:Generator_ColumnPropNameInRow="VC_DESCRIPCION_AGENCIA" msprop:Generator_ColumnVarNameInTable="columnVC_DESCRIPCION_AGENCIA" msprop:Generator_ColumnPropNameInTable="VC_DESCRIPCION_AGENCIAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_CODIGO_CANILLA" msprop:Generator_UserColumnName="CH_CODIGO_CANILLA" msprop:Generator_ColumnPropNameInRow="CH_CODIGO_CANILLA" msprop:Generator_ColumnVarNameInTable="columnCH_CODIGO_CANILLA" msprop:Generator_ColumnPropNameInTable="CH_CODIGO_CANILLAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_TIPO_DOCUMENTO_CANILLA" msprop:Generator_UserColumnName="CH_TIPO_DOCUMENTO_CANILLA" msprop:Generator_ColumnPropNameInRow="CH_TIPO_DOCUMENTO_CANILLA" msprop:Generator_ColumnVarNameInTable="columnCH_TIPO_DOCUMENTO_CANILLA" msprop:Generator_ColumnPropNameInTable="CH_TIPO_DOCUMENTO_CANILLAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_NUMERO_DOCUMENTO_CANILLA" msprop:Generator_UserColumnName="VC_NUMERO_DOCUMENTO_CANILLA" msprop:Generator_ColumnPropNameInRow="VC_NUMERO_DOCUMENTO_CANILLA" msprop:Generator_ColumnVarNameInTable="columnVC_NUMERO_DOCUMENTO_CANILLA" msprop:Generator_ColumnPropNameInTable="VC_NUMERO_DOCUMENTO_CANILLAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_NOMBRE_COMPLETO_CANILLA" msprop:Generator_UserColumnName="VC_NOMBRE_COMPLETO_CANILLA" msprop:Generator_ColumnPropNameInRow="VC_NOMBRE_COMPLETO_CANILLA" msprop:Generator_ColumnVarNameInTable="columnVC_NOMBRE_COMPLETO_CANILLA" msprop:Generator_ColumnPropNameInTable="VC_NOMBRE_COMPLETO_CANILLAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_DIRECCION_COMPLETA_CANILLA" msprop:Generator_UserColumnName="VC_DIRECCION_COMPLETA_CANILLA" msprop:Generator_ColumnPropNameInRow="VC_DIRECCION_COMPLETA_CANILLA" msprop:Generator_ColumnVarNameInTable="columnVC_DIRECCION_COMPLETA_CANILLA" msprop:Generator_ColumnPropNameInTable="VC_DIRECCION_COMPLETA_CANILLAColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

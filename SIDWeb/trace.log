@@ -1,0 +1,813 @@
+﻿----------------------------------------
+Timestamp: 09/03/2014 06:37:37 p.m.
+
+Message: HandlingInstanceID: 33f576cb-2f3f-48cd-863c-02d82657a52f
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/09/2014 13:37:37
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Login failed for user 'sa'.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 14
+LineNumber : 65536
+Number : 18456
+Procedure : 
+Server : .
+State : 1
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1176
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1200
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1191
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 843
+   en DALayer.DACanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DACanilla.cs:línea 39
+   en BLLayer.BLCanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLCanilla.cs:línea 35
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 09/03/2014 06:37:37 p.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-1-130388638480465379
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-1-130388638480465379
+
+ProcessId: 6516
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:4612
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/03/2014 06:37:55 p.m.
+
+Message: HandlingInstanceID: 0eec566b-44af-487e-86db-1ab90efec225
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/09/2014 13:37:55
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Login failed for user 'sa'.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 14
+LineNumber : 65536
+Number : 18456
+Procedure : 
+Server : .
+State : 1
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1176
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1200
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1191
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 843
+   en DALayer.DACanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DACanilla.cs:línea 39
+   en BLLayer.BLCanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLCanilla.cs:línea 35
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 09/03/2014 06:37:55 p.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-1-130388638480465379
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-1-130388638480465379
+
+ProcessId: 6516
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:3688
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/03/2014 06:38:32 p.m.
+
+Message: HandlingInstanceID: bef8fd60-cce8-4c9f-a825-4e643d428459
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/09/2014 13:38:32
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Login failed for user 'sa'.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 14
+LineNumber : 65536
+Number : 18456
+Procedure : 
+Server : .
+State : 1
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1176
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1200
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1191
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 843
+   en DALayer.DACanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DACanilla.cs:línea 39
+   en BLLayer.BLCanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLCanilla.cs:línea 35
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 09/03/2014 06:38:32 p.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-1-130388638480465379
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-1-130388638480465379
+
+ProcessId: 6516
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:7000
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 05:45:57 a.m.
+
+Message: HandlingInstanceID: 6c876a1d-8971-4649-ab46-dd87237d097f
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/14/2014 00:45:57
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Login failed for user 'sa'.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 14
+LineNumber : 65536
+Number : 18456
+Procedure : 
+Server : .
+State : 1
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1176
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1200
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1191
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 843
+   en DALayer.DACanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DACanilla.cs:línea 39
+   en BLLayer.BLCanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLCanilla.cs:línea 35
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 14/03/2014 05:45:57 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-2-130392495436576160
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-2-130392495436576160
+
+ProcessId: 9712
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:6768
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 05:46:58 a.m.
+
+Message: HandlingInstanceID: 972c8418-9825-4c84-b355-b53d6b5b98b3
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/14/2014 00:46:58
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Login failed for user 'sa'.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 14
+LineNumber : 65536
+Number : 18456
+Procedure : 
+Server : .
+State : 1
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1176
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1200
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection() en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 1191
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 843
+   en DALayer.DACanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DACanilla.cs:línea 39
+   en BLLayer.BLCanilla.selectCanillas(BECanilla canilla) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLCanilla.cs:línea 35
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 14/03/2014 05:46:58 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-2-130392495436576160
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-2-130392495436576160
+
+ProcessId: 9712
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:7660
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 05:55:46 a.m.
+
+Message: HandlingInstanceID: ce1876c7-c039-48aa-b930-13735b426f5a
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/14/2014 00:55:46
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function SP_GRABAR_FORMULA has too many arguments specified.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 8144
+Procedure : SP_GRABAR_FORMULA
+Server : .
+State : 2
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 443
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command, DbTransaction transaction) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 732
+   en DALayer.DAPauta.grabarSolicitudPauta(BEPauta pauta, DbTransaction mTransaction) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 156
+   en BLLayer.BLPauta.grabarSolicitudPauta(List`1 listaPautas) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 130
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 14/03/2014 05:55:46 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-3-130392496597872582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-3-130392496597872582
+
+ProcessId: 9712
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:784
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/03/2014 09:02:25 a.m.
+
+Message: HandlingInstanceID: 909e6ce7-ed8f-4062-80ed-6ca8177bee70
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/17/2014 04:02:25
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'SP_LISTAR_PAUTAS_CANILLAS' expects parameter '@CH_ESTADO_PAUTA', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : SP_LISTAR_PAUTAS_CANILLAS
+Server : .
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 460
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 846
+   en DALayer.DAPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 85
+   en BLLayer.BLPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 90
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 17/03/2014 09:02:25 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-7-130395198927413582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-7-130395198927413582
+
+ProcessId: 13688
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:11404
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/03/2014 09:02:30 a.m.
+
+Message: HandlingInstanceID: 80c06a0e-2b7b-45f5-b20b-88b32c3b902c
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/17/2014 04:02:30
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'SP_LISTAR_PAUTAS_CANILLAS' expects parameter '@CH_ESTADO_PAUTA', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : SP_LISTAR_PAUTAS_CANILLAS
+Server : .
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 460
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 846
+   en DALayer.DAPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 85
+   en BLLayer.BLPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 90
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 17/03/2014 09:02:30 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-7-130395198927413582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-7-130395198927413582
+
+ProcessId: 13688
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:5812
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/03/2014 09:02:32 a.m.
+
+Message: HandlingInstanceID: 572656b2-965d-47c1-9f43-9c2e99300885
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/17/2014 04:02:32
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'SP_LISTAR_PAUTAS_CANILLAS' expects parameter '@CH_ESTADO_PAUTA', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : SP_LISTAR_PAUTAS_CANILLAS
+Server : .
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 460
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 846
+   en DALayer.DAPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 85
+   en BLLayer.BLPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 90
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 17/03/2014 09:02:32 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-7-130395198927413582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-7-130395198927413582
+
+ProcessId: 13688
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:5812
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/03/2014 09:02:33 a.m.
+
+Message: HandlingInstanceID: efb7b157-cdde-4424-bed3-49294cd39e20
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/17/2014 04:02:33
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'SP_LISTAR_PAUTAS_CANILLAS' expects parameter '@CH_ESTADO_PAUTA', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : SP_LISTAR_PAUTAS_CANILLAS
+Server : .
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 460
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 846
+   en DALayer.DAPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 85
+   en BLLayer.BLPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 90
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 17/03/2014 09:02:33 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-7-130395198927413582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-7-130395198927413582
+
+ProcessId: 13688
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:6400
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/03/2014 09:02:34 a.m.
+
+Message: HandlingInstanceID: dc2c4d94-c724-42ce-9624-5fd235f65c40
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+03/17/2014 04:02:34
+Type : System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'SP_LISTAR_PAUTAS_CANILLAS' expects parameter '@CH_ESTADO_PAUTA', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : SP_LISTAR_PAUTAS_CANILLAS
+Server : .
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void OnError(System.Data.SqlClient.SqlException, Boolean)
+Stack Trace :    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 460
+   en Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) en e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:línea 846
+   en DALayer.DAPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\DALayer\DAPauta.cs:línea 85
+   en BLLayer.BLPauta.selectPautasCanillas(BEPauta pauta) en D:\Fuentes\SIDWeb\sidwebpi\SIDWeb\BLLayer\BLPauta.cs:línea 90
+
+Additional Info:
+
+MachineName : WINDOWS7-PC
+TimeStamp : 17/03/2014 09:02:34 a.m.
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : f780e819-7-130395198927413582
+ThreadIdentity : Windows7-PC\Windows  7
+WindowsIdentity : Windows7-PC\Windows  7
+
+
+Category: General
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: WINDOWS7-PC
+
+App Domain: f780e819-7-130395198927413582
+
+ProcessId: 13688
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.exe
+
+Thread Name: 
+
+Win32 ThreadId:11404
+
+----------------------------------------
