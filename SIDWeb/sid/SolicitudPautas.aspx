@@ -103,6 +103,16 @@
                                         <asp:Label ID="lblCodigoMotivoVenta" runat="server" Text='<%# Bind("codigoMotivoVenta") %>'></asp:Label>
                                     </ItemTemplate>
                                 </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Código de la Pauta" Visible="false">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lblCodigoPauta" runat="server" Text='<%# Bind("codigoPauta") %>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Estado de la Pauta" Visible="false">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lblEstadoPauta" runat="server" Text='<%# Bind("estadoPauta") %>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                             </Columns>
                         </asp:GridView>
                     </div>

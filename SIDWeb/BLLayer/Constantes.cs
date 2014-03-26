@@ -38,5 +38,13 @@ namespace BLLayer
             Ok = 0,
             Error = -1
         }
+
+        public static string EstadoPautaNuevo = "N";
+        public static string EstadoPautaSolicitado = "S";
+        public static string EstadoPautaProyectado = "P";
+        public static string EstadoPautaSugerido = "G";
+        public static string EstadoPautaAprobadoo = "A";
+        public static string EstadoPautaEntregado = "E";
+        public static string EstadoPautaDevuelto = "D";
     }
 }
