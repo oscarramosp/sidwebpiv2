@@ -7,6 +7,7 @@ namespace BELayer
 {
     public class BEPauta : BEBase
     {
+        public Int32 codigoPauta { get; set; }
         public string codigoDistribuidor { get; set; }
         public string codigoAgencia { get; set; }
         public string codigoCanilla { get; set; }

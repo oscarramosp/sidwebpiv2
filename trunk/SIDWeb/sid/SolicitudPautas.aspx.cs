@@ -57,13 +57,26 @@ namespace sid
                 Label lblSolicitada = (Label)e.Row.FindControl("lblSolicitada");
                 TextBox txtDevuelta = (TextBox)e.Row.FindControl("txtDevuelta");
                 Label lblDevuelta = (Label)e.Row.FindControl("lblDevuelta");
+                Label lblEstadoPauta = (Label)e.Row.FindControl("lblEstadoPauta");
+
                 if (!String.IsNullOrEmpty(Util.SessionHelper.getOperacionPauta()) && Util.SessionHelper.getOperacionPauta().Equals("d"))
                 {
                     lblDevuelta.Visible = false;
+                    if (!String.IsNullOrEmpty(lblEstadoPauta.Text) && !lblEstadoPauta.Text.Trim().Equals("E"))
+                    {
+                        txtDevuelta.ReadOnly = true;
+                        txtDevuelta.BackColor = System.Drawing.Color.LightGray;
+                    }
                 }
                 else
                 {
                     lblSolicitada.Visible = false;
+                    if (!String.IsNullOrEmpty(lblEstadoPauta.Text) && !lblEstadoPauta.Text.Trim().Equals(Constantes.EstadoPautaNuevo) && 
+                                                                        !lblEstadoPauta.Text.Trim().Equals(Constantes.EstadoPautaSolicitado))
+                    {
+                        txtSolicitada.ReadOnly = true;
+                        txtSolicitada.BackColor = System.Drawing.Color.LightGray;
+                    }
                 }
                 
             }
@@ -181,15 +194,16 @@ namespace sid
             foreach (GridViewRow row in dgvPautaCanilla.Rows)
             {
                 pauta = new BEPauta();
-                pauta.codigoDistribuidor = ((Label)row.FindControl("lblCodigoDistribuidor")).Text.Trim();
-                pauta.codigoAgencia = ((Label)row.FindControl("lblCodigoAgencia")).Text.Trim();
-                pauta.codigoCanilla = ((Label)row.FindControl("lblCodigoCanilla")).Text.Trim();
-                pauta.codigoEmpresa = ((Label)row.FindControl("lblCodigoEmpresa")).Text.Trim();
-                pauta.codigoSector = ((Label)row.FindControl("lblCodigoSector")).Text.Trim();
-                pauta.codigoProducto = row.Cells[0].Text.Trim();
-                pauta.codigoCanal = ((Label)row.FindControl("lblCodigoCanal")).Text.Trim();
-                pauta.codigoMotivoVenta = ((Label)row.FindControl("lblCodigoMotivoVenta")).Text.Trim();
-                pauta.fechaPauta = clnFecha.SelectedDate;
+                pauta.codigoPauta = Convert.ToInt32(((Label)row.FindControl("lblCodigoPauta")).Text.Trim());
+                //pauta.codigoDistribuidor = ((Label)row.FindControl("lblCodigoDistribuidor")).Text.Trim();
+                //pauta.codigoAgencia = ((Label)row.FindControl("lblCodigoAgencia")).Text.Trim();
+                //pauta.codigoCanilla = ((Label)row.FindControl("lblCodigoCanilla")).Text.Trim();
+                //pauta.codigoEmpresa = ((Label)row.FindControl("lblCodigoEmpresa")).Text.Trim();
+                //pauta.codigoSector = ((Label)row.FindControl("lblCodigoSector")).Text.Trim();
+                //pauta.codigoProducto = row.Cells[0].Text.Trim();
+                //pauta.codigoCanal = ((Label)row.FindControl("lblCodigoCanal")).Text.Trim();
+                //pauta.codigoMotivoVenta = ((Label)row.FindControl("lblCodigoMotivoVenta")).Text.Trim();
+                //pauta.fechaPauta = clnFecha.SelectedDate;
                 pauta.cantidadSolicitada = Convert.ToInt32(((TextBox)row.FindControl("txtSolicitada")).Text);
                 listaPauta.Add(pauta);
             }
@@ -217,6 +231,7 @@ namespace sid
             {
                 strMensaje = "Registro de solicitudes de pauta exitoso";
                 strClass = "alert alert-success";
+                buscarSolicitudes();
             }
 
             spnMensaje.Attributes["class"] = strClass;
@@ -231,15 +246,16 @@ namespace sid
             foreach (GridViewRow row in dgvPautaCanilla.Rows)
             {
                 pauta = new BEPauta();
-                pauta.codigoDistribuidor = ((Label)row.FindControl("lblCodigoDistribuidor")).Text.Trim();
-                pauta.codigoAgencia = ((Label)row.FindControl("lblCodigoAgencia")).Text.Trim();
-                pauta.codigoCanilla = ((Label)row.FindControl("lblCodigoCanilla")).Text.Trim();
-                pauta.codigoEmpresa = ((Label)row.FindControl("lblCodigoEmpresa")).Text.Trim();
-                pauta.codigoSector = ((Label)row.FindControl("lblCodigoSector")).Text.Trim();
-                pauta.codigoProducto = row.Cells[0].Text.Trim();
-                pauta.codigoCanal = ((Label)row.FindControl("lblCodigoCanal")).Text.Trim();
-                pauta.codigoMotivoVenta = ((Label)row.FindControl("lblCodigoMotivoVenta")).Text.Trim();
-                pauta.fechaPauta = clnFecha.SelectedDate;
+                pauta.codigoPauta = Convert.ToInt32(((Label)row.FindControl("lblCodigoPauta")).Text.Trim());
+                //pauta.codigoDistribuidor = ((Label)row.FindControl("lblCodigoDistribuidor")).Text.Trim();
+                //pauta.codigoAgencia = ((Label)row.FindControl("lblCodigoAgencia")).Text.Trim();
+                //pauta.codigoCanilla = ((Label)row.FindControl("lblCodigoCanilla")).Text.Trim();
+                //pauta.codigoEmpresa = ((Label)row.FindControl("lblCodigoEmpresa")).Text.Trim();
+                //pauta.codigoSector = ((Label)row.FindControl("lblCodigoSector")).Text.Trim();
+                //pauta.codigoProducto = row.Cells[0].Text.Trim();
+                //pauta.codigoCanal = ((Label)row.FindControl("lblCodigoCanal")).Text.Trim();
+                //pauta.codigoMotivoVenta = ((Label)row.FindControl("lblCodigoMotivoVenta")).Text.Trim();
+                //pauta.fechaPauta = clnFecha.SelectedDate;
                 pauta.cantidadDevuelta = Convert.ToInt32(((TextBox)row.FindControl("txtDevuelta")).Text);
                 listaPauta.Add(pauta);
             }
@@ -263,6 +279,7 @@ namespace sid
             {
                 strMensaje = "Registro de devolución de productos exitoso";
                 strClass = "alert alert-success";
+                buscarSolicitudes();
             }
 
             spnMensaje.Attributes["class"] = strClass;

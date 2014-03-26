@@ -87,8 +87,7 @@ namespace DALayer
             while (rdr.Read())
             {
                 pauta = new BEPauta();
-                pauta.codigoDistribuidor = rdr.IsDBNull(rdr.GetOrdinal("CH_CODIGO_DISTRIBUIDOR")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_CODIGO_DISTRIBUIDOR"));
-                pauta.codigoAgencia = rdr.IsDBNull(rdr.GetOrdinal("CH_CODIGO_AGENCIA")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_CODIGO_AGENCIA"));
+                pauta.codigoPauta = rdr.IsDBNull(rdr.GetOrdinal("IN_CODIGO_PAUTA")) ? 0 : rdr.GetInt32(rdr.GetOrdinal("IN_CODIGO_PAUTA"));
                 pauta.codigoCanilla = rdr.IsDBNull(rdr.GetOrdinal("CH_CODIGO_CANILLA")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_CODIGO_CANILLA"));
                 pauta.codigoEmpresa = rdr.IsDBNull(rdr.GetOrdinal("CH_CODIGO_EMPRESA")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_CODIGO_EMPRESA"));
                 pauta.codigoSector = rdr.IsDBNull(rdr.GetOrdinal("CH_CODIGO_SECTOR")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_CODIGO_SECTOR"));
@@ -102,6 +101,7 @@ namespace DALayer
                 pauta.cantidadAprobada = rdr.IsDBNull(rdr.GetOrdinal("IN_CANTIDAD_APROBADA")) ? 0 : rdr.GetInt32(rdr.GetOrdinal("IN_CANTIDAD_APROBADA"));
                 pauta.cantidadDevuelta = rdr.IsDBNull(rdr.GetOrdinal("IN_CANTIDAD_DEVUELTA")) ? 0 : rdr.GetInt32(rdr.GetOrdinal("IN_CANTIDAD_DEVUELTA"));
                 pauta.cantidadEntregada = rdr.IsDBNull(rdr.GetOrdinal("IN_CANTIDAD_ENTREGADA")) ? 0 : rdr.GetInt32(rdr.GetOrdinal("IN_CANTIDAD_ENTREGADA"));
+                pauta.estadoPauta = rdr.IsDBNull(rdr.GetOrdinal("CH_ESTADO_PAUTA")) ? String.Empty : rdr.GetString(rdr.GetOrdinal("CH_ESTADO_PAUTA"));
                 listaPautas.Add(pauta);
             }
             return listaPautas;
@@ -121,15 +121,7 @@ namespace DALayer
             myParam.Value = intCodigoError;
             dbCommand.Parameters.Add(myParam);
 
-            db.AddInParameter(dbCommand, "@CH_CODIGO_DISTRIBUIDOR", DbType.String, pauta.codigoDistribuidor);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_AGENCIA", DbType.String, pauta.codigoAgencia);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_CANILLA", DbType.String, pauta.codigoCanilla);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_EMPRESA", DbType.String, pauta.codigoEmpresa);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_SECTOR", DbType.String, pauta.codigoSector);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_PRODUCTO", DbType.String, pauta.codigoProducto);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_CANAL", DbType.String, pauta.codigoCanal);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_MOTIVO_VENTA", DbType.String, pauta.codigoMotivoVenta);
-            db.AddInParameter(dbCommand, "@DT_FECHA_PAUTA", DbType.DateTime, pauta.fechaPauta);
+            db.AddInParameter(dbCommand, "@IN_CODIGO_PAUTA", DbType.Int32, pauta.codigoPauta);
             
 
             db.ExecuteNonQuery(dbCommand);
@@ -144,15 +136,7 @@ namespace DALayer
             Database db = DatabaseFactory.CreateDatabase();
             System.Data.Common.DbCommand dbCommandWrapper = db.GetStoredProcCommand("SP_GRABAR_SOLICITUD_PAUTA");
 
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_DISTRIBUIDOR", DbType.String, pauta.codigoDistribuidor.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_AGENCIA", DbType.String, pauta.codigoAgencia.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_CANILLA", DbType.String, pauta.codigoCanilla.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_EMPRESA", DbType.String, pauta.codigoEmpresa.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_SECTOR", DbType.String, pauta.codigoSector.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_PRODUCTO", DbType.String, pauta.codigoProducto.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_CANAL", DbType.String, pauta.codigoCanal.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_MOTIVO_VENTA", DbType.String, pauta.codigoMotivoVenta.Trim());
-            db.AddInParameter(dbCommandWrapper, "@DT_FECHA_PAUTA", DbType.DateTime, pauta.fechaPauta);
+            db.AddInParameter(dbCommandWrapper, "@IN_CODIGO_PAUTA", DbType.Int32, pauta.codigoPauta);
             db.AddInParameter(dbCommandWrapper, "@IN_CANTIDAD_SOLICITADA", DbType.Int32, pauta.cantidadSolicitada);
 
             db.ExecuteNonQuery(dbCommandWrapper, mTransaction);
@@ -172,15 +156,7 @@ namespace DALayer
             myParam.Value = intCodigoError;
             dbCommand.Parameters.Add(myParam);
 
-            db.AddInParameter(dbCommand, "@CH_CODIGO_DISTRIBUIDOR", DbType.String, pauta.codigoDistribuidor);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_AGENCIA", DbType.String, pauta.codigoAgencia);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_CANILLA", DbType.String, pauta.codigoCanilla);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_EMPRESA", DbType.String, pauta.codigoEmpresa);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_SECTOR", DbType.String, pauta.codigoSector);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_PRODUCTO", DbType.String, pauta.codigoProducto);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_CANAL", DbType.String, pauta.codigoCanal);
-            db.AddInParameter(dbCommand, "@CH_CODIGO_MOTIVO_VENTA", DbType.String, pauta.codigoMotivoVenta);
-            db.AddInParameter(dbCommand, "@DT_FECHA_PAUTA", DbType.DateTime, pauta.fechaPauta);
+            db.AddInParameter(dbCommand, "@IN_CODIGO_PAUTA", DbType.String, pauta.codigoPauta);
 
 
             db.ExecuteNonQuery(dbCommand);
@@ -195,15 +171,7 @@ namespace DALayer
             Database db = DatabaseFactory.CreateDatabase();
             System.Data.Common.DbCommand dbCommandWrapper = db.GetStoredProcCommand("SP_GRABAR_DEVOLVER_PRODUCTOS");
 
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_DISTRIBUIDOR", DbType.String, pauta.codigoDistribuidor.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_AGENCIA", DbType.String, pauta.codigoAgencia.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_CANILLA", DbType.String, pauta.codigoCanilla.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_EMPRESA", DbType.String, pauta.codigoEmpresa.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_SECTOR", DbType.String, pauta.codigoSector.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_PRODUCTO", DbType.String, pauta.codigoProducto.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_CANAL", DbType.String, pauta.codigoCanal.Trim());
-            db.AddInParameter(dbCommandWrapper, "@CH_CODIGO_MOTIVO_VENTA", DbType.String, pauta.codigoMotivoVenta.Trim());
-            db.AddInParameter(dbCommandWrapper, "@DT_FECHA_PAUTA", DbType.DateTime, pauta.fechaPauta);
+            db.AddInParameter(dbCommandWrapper, "@IN_CODIGO_PAUTA", DbType.Int32, pauta.codigoPauta);
             db.AddInParameter(dbCommandWrapper, "@IN_CANTIDAD_DEVUELTA", DbType.Int32, pauta.cantidadDevuelta);
 
             db.ExecuteNonQuery(dbCommandWrapper, mTransaction);
