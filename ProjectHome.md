@@ -1,0 +1,1 @@
+Versión 2 de sistema Integrado de Distribución
